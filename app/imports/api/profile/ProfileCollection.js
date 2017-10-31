@@ -76,7 +76,8 @@ class ProfileCollection extends BaseCollection {
       throw new Meteor.Error(`${interests} contains duplicates`);
     }
 
-    return this._collection.insert({ firstName, lastName, username, bio, interests, picture, title,   github, facebook, instagram, location });
+    return this._collection.insert({ firstName, lastName, username, bio, interests,
+      picture, title, github, facebook, instagram, location });
   }
 
   /**
